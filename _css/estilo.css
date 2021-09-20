@@ -1,0 +1,230 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face {
+    font-family: fontlogo;
+    src: url("../_fonts/computer-font.ttf");
+}
+:root {
+    --cinza : #f1f1f1;
+    --cinzae : #606060;
+}
+
+div#interface {
+    padding: 15px;
+    margin: -20px auto 0px auto;
+    width:1020px;
+    background-color: white;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background-color: var(--cinza);
+    color: black;
+    font-family: sans-serif;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+a {
+    color: var(--cinzae);
+    text-decoration: none;
+}
+
+header#cabecalho {
+    border-bottom: 1px var(--cinza) solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 95px;
+}
+
+header#cabecalho h1 {
+    font-family: 'fontlogo', Helvetica, sans-serif;
+    color: var(--cinzae);
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 45pt;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    color: var(--cinza);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0,6);
+    padding: 0px;
+    margin-top: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20pt;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 900px;
+    top: 50px;
+}
+
+nav#menu {
+    display: inline-block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 200px;
+}
+
+nav#menu li {
+    background-color: var(--cinza);
+    display: inline-block;
+    padding: 7px;
+    margin: 1px;
+    transition: background-color 0.2s;
+}
+
+nav#menu li:hover {
+    background-color: var(--cinzae);
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    text-decoration: none;
+    color: black;
+}
+
+nav#menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+article#noticias h2 {
+    font-size: 12pt;
+    color: var(--cinza);
+    background-color: var(--cinzae);
+    padding: 5px 10px;
+    margin: 10px 0px;
+}
+
+header#cabecalhoartigo h1 {
+    font-family: 'fontlogo', sans-serif;
+    font-size: 30pt;
+    color: var(--cinzae);
+    margin-bottom: 0px;
+}
+
+header#cabecalhoartigo h2 {
+    font-size: 13pt;
+    color: var(--cinzae);
+    background-color: white;
+    margin-top: 0px;
+}
+
+header#cabecalhoartigo h3 {
+    font-size: 12px;
+    color: var(--cinzae);
+}
+
+.direita {
+    text-align: right;
+}
+
+
+.fotolegenda {
+    border: 8px solid white;
+    box-shadow: 0px 0px 8px black;
+}
+
+figure.fotolegenda img {
+    width: 100%;
+    height: 100%;
+}
+
+section#corpo {
+    display: block;
+    width: 580px;
+    float: left;
+    border-right: 1px solid var(--cinza);
+    padding-right: 10px;
+}
+
+table#tabelaspec {
+    border: 1px solid var(--cinzae);
+    border-spacing:  0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table#tabelaspec td {
+    border: 1px solid var(--cinzae);
+    padding: 6px 20px;
+}
+
+table#tabelaspec td.ce {
+    text-align: left;
+    background-color: var(--cinzae);
+    color: white;
+    font-size: 1.2em;
+    vertical-align: top;
+    font-weight: 900;
+}
+
+table#tabelaspec td.cd {
+    text-align: right;
+    background-color: var(--cinza);
+}
+
+table#tabelaspec caption {
+    color: var(--cinzae);
+    font-weight: 900;
+    font-size: 1.3em;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: rgb(0, 0, 0);
+    font-size: 10pt;
+    margin-top: 10px;
+}
+
+aside#lateral {
+    display: block;
+    width: 400px;
+    float: right;
+    background-color: var(--cinza);
+    padding: 5px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.555);
+}
+
+aside#lateral h1 {
+    font-family: 'fontlogo' ,sans-serif;
+    color: var(--cinzae);
+}
+
+aside#lateral h2 {
+    background-color: var(--cinzae);
+    padding: 3px;
+    font-size: 12pt;
+    color: var(--cinza);
+}
+
+
+footer#rodape {
+    clear: both;
+}
+footer#rodape p {
+    text-align: center;
+}
+
+footer#rodape a {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.7);
+}
+footer#rodape a:hover {
+    color: black;
+    text-decoration: overline;
+}
